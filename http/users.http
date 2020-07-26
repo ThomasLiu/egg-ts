@@ -12,3 +12,4 @@ Content-Type: application/json
 
 GET {{host}}/api/users
 Content-Type: application/json
+
