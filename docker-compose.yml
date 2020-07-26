@@ -1,23 +1,23 @@
 egg-ts:
   build: .
-  # links:
-  #   - mysql:egg-mysql-server
-  #   - redis:egg-redis-server
+  links:
+    - mysql:egg-mysql-server
+    - redis:egg-redis-server
   ports:
     - "7001:7001"
   volumes:
     - ./volume:/app/volume
-# mysql:
-#   image: mysql:5.7
-#   container_name: egg-mysql-server
-#   environment:
-#     - MYSQL_ROOT_PASSWORD=123456
-#     - MYSQL_DATABASE=official_website_api
+mysql:
+  image: mysql:5.7
+  container_name: egg-mysql-server
+  environment:
+    - MYSQL_ROOT_PASSWORD=123456
+    - MYSQL_DATABASE=official_website_api
 
-# redis:
-#   image: redis:3.2
-#   container_name: egg-redis-server
-#   environment:
-#     - PASSWORD=123456
-#   volumes:
-#     - ./redis:/data
+redis:
+  image: redis:3.2
+  container_name: egg-redis-server
+  environment:
+    - PASSWORD=123456
+  volumes:
+    - ./redis:/data

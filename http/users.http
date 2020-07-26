@@ -1,0 +1,14 @@
+
+
+POST {{host}}/api/users
+Content-Type: application/json
+
+{
+  "name": "name",
+  "password": "password"
+}
+
+###
+
+GET {{host}}/api/users
+Content-Type: application/json

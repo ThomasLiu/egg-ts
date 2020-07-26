@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+.idea/
+volume
+redis
+logs
+coverage
+run
+*.lock

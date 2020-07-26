@@ -1,4 +1,4 @@
-import { EggPlugin } from 'egg';
+import { EggPlugin } from 'egg'
 
 const plugin: EggPlugin = {
   // static: true,
@@ -6,6 +6,21 @@ const plugin: EggPlugin = {
   //   enable: true,
   //   package: 'egg-view-nunjucks',
   // },
-};
+  validate: {
+    package: 'egg-validate',
+  },
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize-ts',
+  },
+  redis: {
+    enable: true,
+    package: 'egg-redis',
+  },
+  sessionRedis: {
+    enable: true,
+    package: 'egg-session-redis',
+  },
+}
 
-export default plugin;
+export default plugin

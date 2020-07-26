@@ -1,0 +1,18 @@
+mysql:
+  image: mysql:5.7
+  container_name: egg-mysql-server-dev
+  ports:
+    - 3306:3306
+  environment:
+    - MYSQL_ROOT_PASSWORD=123456
+    - MYSQL_DATABASE=official_website_api
+
+redis:
+  image: redis:3.2
+  container_name: egg-redis-server-dev
+  ports:
+    - 6379:6379
+  environment:
+    - PASSWORD=123456
+  volumes:
+    - ./redis:/data
