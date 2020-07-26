@@ -31,6 +31,7 @@
     "egg-scripts": "^2.6.0",
     "egg-sequelize-ts": "^0.2.3-0",
     "egg-session-redis": "^2.1.0",
+    "egg-type-graphql": "^1.8.1",
     "egg-validate": "^2.0.2",
     "mysql2": "^2.1.0"
   },

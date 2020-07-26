@@ -18,6 +18,7 @@ import 'egg-validate';
 import 'egg-sequelize-ts';
 import 'egg-redis';
 import 'egg-session-redis';
+import 'egg-type-graphql';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -37,5 +38,6 @@ declare module 'egg' {
     sequelize?: EggPluginItem;
     redis?: EggPluginItem;
     sessionRedis?: EggPluginItem;
+    typeGraphQL?: EggPluginItem;
   }
 }

@@ -49,6 +49,11 @@ export default (appInfo: EggAppInfo) => {
         db: 0,
       },
     },
+
+    typeGraphQL: {
+      router: '/graphql',
+      dateScalarMode: 'isoDate',
+    },
   }
 
   // the return config will combines to EggAppConfig

@@ -21,6 +21,10 @@ const plugin: EggPlugin = {
     enable: true,
     package: 'egg-session-redis',
   },
+  typeGraphQL: {
+    enable: true,
+    package: 'egg-type-graphql',
+  },
 }
 
 export default plugin
